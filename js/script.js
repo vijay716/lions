@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close menu when clicking outside the menu
     document.addEventListener("click", function (event) {
         const isClickInsideMenu = nav.contains(event.target) || menuToggle.contains(event.target);
-        if (!isClickInsideMenu) {
-            navLinks.classList.remove("active"); // Close menu
+        if (!isClickInsideMenu && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active"); // Close menu only if it's open
         }
     });
 
