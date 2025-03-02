@@ -588,7 +588,6 @@ color: #f39c12; /* Change color on hover */
     }
 }
 /* CSS for mobile view */
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -607,12 +606,4 @@ color: #f39c12; /* Change color on hover */
         display: block;
         z-index: 1001;
     }
-    .nav-links ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .nav-links li {
-        padding: 10px;
-    }
 }
-
